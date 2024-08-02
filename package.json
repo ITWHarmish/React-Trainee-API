@@ -1,0 +1,35 @@
+{
+    "name": "slack-api",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc",
+        "start": "npm run build && concurrently \"tsc -w\" \"nodemon dist/app.js\" --inspect"
+    },
+    "dependencies": {
+        "axios": "^0.27.2",
+        "bcrypt": "^5.1.1",
+        "body-parser": "^1.19.1",
+        "concurrently": "^6.4.0",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^9.0.2",
+        "moment": "^2.29.4",
+        "mongoose": "^6.0.13",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.15",
+        "typescript": "^4.5.4"
+    },
+    "devDependencies": {
+        "@types/bcrypt": "^5.0.2",
+        "@types/cookie-parser": "^1.4.7",
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@types/jsonwebtoken": "^9.0.6",
+        "@types/mongoose": "^5.11.97",
+        "@types/morgan": "^1.9.9",
+        "@types/node": "^16.11.17"
+    }
+}
